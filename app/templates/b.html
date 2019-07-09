@@ -39,9 +39,14 @@
 
 
 <script type="text/javascript">
-
 	// your solution here
-
+  var Timer = setInterval(myTimer, 1000);
+  function myTimer(){ 
+    $('.shape-container').append('<div class="p2-circle bg-blue"></div>');
+  }
+  $('.btn').on('click', () => {
+    clearInterval(Timer);
+  });
 </script>
 </body>
 </html>
